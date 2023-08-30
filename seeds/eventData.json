@@ -1,0 +1,48 @@
+[
+  {
+    "event_image": "BLOB-TBD",
+    "event_name": "Richmond MusicFest",
+    "event_artists": [
+      "john doe", "jane doe", "joe doe"
+    ],
+    "event_date": "2023-09-10",
+    "event_time": "14:00:00",
+    "event_venue": "Brown's Island",    
+    "event_description": "Richmond MusicFest is a free, family-friendly event that brings together the community in celebration of music and the arts. The festival features local and national artists, food trucks, vendors, and more. The festival is held at Brown's Island in Richmond, VA.",
+    "user_id": 1
+
+
+  },
+
+  {
+
+  "event_image": "BLOB-TBD",
+  "event_name": "VCU MusicFest",
+  "event_artists": [
+    "john doe", "jane doe", "joe doe"
+  ],
+  "event_date": "2023-10-11",
+  "event_time": "11:00:00",
+  "event_venue": "Monroe Square",  
+  "event_description": "VCU MusicFest is a fund raiser for Richmond City Schools' music programs. The event will take place at Monroe Square in Richmond, VA.",
+  "user_id": 2
+
+  },
+
+
+{
+
+"event_image": "BLOB-TBD",
+"event_name": "U of R Indie Artist Expo",
+"event_artists": [
+  "adam smith", "merisol", "carlos cortez"
+],
+"event_date": "2024-01-02",
+"event_time": "10:00:00",
+"event_venue": "U of R Main Campus",
+"event_description": "U of R Indie Artist Expo is a fund raiser for public art programs. The event will take place on the main campus in Richmond, VA.",
+"user_id": 3
+
+}
+
+]
