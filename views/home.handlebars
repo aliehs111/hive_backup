@@ -1,12 +1,12 @@
   <link rel="stylesheet" href="../public/css/style.css">
 
 <ul id="hexGrid">
-  {{#each users as |user| }}
+  {{#each events as |event| }}
     <li class="hex">
       <a class="hexIn" href="#">
-        <img src="{{user.photo}}" alt="">
-        <h1>{{user.event.name}}</h1>
-        <p>{{user.event.date}}</p>
+        <img src="{{event.event_image}}" alt="">
+        <h1>{{event.even_name}}</h1>
+        <p>{{event.event_date}}</p>
       </a>
     </li>
   {{/each}}

@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
 class Event extends Model {}
 
@@ -13,15 +13,14 @@ Event.init(
     },
     event_image: {
       type: DataTypes.BLOB,
-    },  
+    },
     event_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     event_artists: {
-      type: DataTypes.ARRAY(DataTypes.STRING), // Array of strings for artists
+      type: DataTypes.STRING, // Use STRING data type
       allowNull: true,
-      defaultValue: [], // Default empty array
     },
     event_date: {
       type: DataTypes.DATE,
@@ -34,7 +33,7 @@ Event.init(
     event_venue: {
       type: DataTypes.STRING,
       allowNull: false,
-    }, 
+    },
     event_description: {
       type: DataTypes.STRING,
     },
@@ -43,12 +42,12 @@ Event.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-   
+
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
-        key: 'id',
+        model: "user",
+        key: "id",
       },
     },
   },
@@ -57,9 +56,8 @@ Event.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'event',
+    modelName: "event",
   }
 );
 
 module.exports = Event;
-
