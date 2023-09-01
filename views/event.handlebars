@@ -1,14 +1,17 @@
-<div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{{get_emoji}}}</p>
-  <p>{{description}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-    <span for="img" aria-label="money">💲</span>
-    <span class="dollar-amount">{{format_amount needed_funding}}</span>
-    needed
-  </p>
-  <p>
-    <button class="btn btn-primary">Fund this Project!</button>
-  </p>
+<div class="form_container">
+<h2>Create a New Event</h2>
+
+<form id="create-event-form">
+  <label for="event-name">Event Name</label>
+  <input type="text" id="event-name" name="event-name" required>
+
+  <label for="event-venue">Event Venue</label>
+  <textarea id="event-venue" name="event-venue" required></textarea>
+
+  <label for="event-time">Event Time</label>
+<textarea id="event-time" name="event-time" required></textarea>
+  <button type="submit">Create Event</button>
+</form>
 </div>
+
+<script src="/js/event.js"></script>

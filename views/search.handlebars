@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Page</title>
-    <link rel="stylesheet" href="search.css">
-</head>
 <body>
     <header>
         <h1>Search Page</h1>
@@ -20,6 +12,7 @@
         </div>
     </div>
 
+ {{!-- // Perform search and populate searchResults with the results --}}
     <script>
         const searchForm = document.getElementById("search-form");
         const searchInput = document.getElementById("search-input");
@@ -28,8 +21,8 @@
         searchForm.addEventListener("submit", function(event) {
             event.preventDefault();
             const query = searchInput.value;
-            // Perform search and populate searchResults with the results
+           
         });
     </script>
 </body>
-</html>
+

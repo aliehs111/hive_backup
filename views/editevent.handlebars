@@ -1,0 +1,16 @@
+<h2>Edit Event</h2>
+
+<form id="edit-post-form">
+  <label for="post-title">Event Name</label>
+  <input type="text" id="post-title" name="post-title" value="{{event.event_name}}" />
+
+  <label for="post-content">Content</label>
+  <textarea id="post-content" name="post-content">{{event.event_venue}}</textarea>
+<input type="hidden" id="post-id" name="post-id" value="{{event.id}}" />
+
+  <button type="submit" id="edit_post">Edit Event</button>
+  <button type="button" id="del_post">Delete Event</button>
+
+</form>
+
+<script src="/js/editpost.js"></script>

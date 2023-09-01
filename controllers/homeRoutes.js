@@ -29,7 +29,7 @@ router.get('/', async function (req, res) {
         });
         const events = eventsData.map((post) => post.get({ plain: true }));
             res.render('home',{
-            loggedIn: req.session.logged_in, posts
+            loggedIn: req.session.logged_in, events
     
         })
     } catch (error) {
@@ -68,7 +68,7 @@ router.get('/event/:id', async function (req, res) {
             ]
             
         });
-        const post = postData.get({plain: true});
+        const post = eventData.get({ plain: true });
             res.render('eventdetails',{
             loggedIn: req.session.logged_in, post
     
