@@ -1,16 +1,10 @@
   <h1>test home</h1>
-  <h4>all the events will show here in hexagons</h4>
+  <h4>note - all the events will ultimately show here in hexagons</h4>
 
-{{!-- <ul id="hexGrid">
-  {{#each events as |event| }}
-    <li class="hex">
-      <a class="hexIn" href="#">
-        <img src="{{event.event_image}}" alt="">
-        <h1>{{event.even_name}}</h1>
-        <p>{{event.event_date}}</p>
-      </a>
-    </li>
-  {{/each}}
-</ul> --}}
+<section class="events_container">
+    {{#each events as |event|}}
+        {{> event event}}         
+    {{/each}}
+</section>
 
 

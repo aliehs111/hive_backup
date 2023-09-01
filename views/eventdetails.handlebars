@@ -1,0 +1,23 @@
+{{> event event}}
+
+{{!-- this section is for new comments if logged in --}}
+{{#if loggedIn}}
+<form id="create-event-form">
+    <input type="hidden" id="event-id" name="event-id" value="{{event.id}}">
+    <textarea id="comment-content" name="comment-content" required></textarea>
+    <button type="submit">Create Comment</button>
+   
+</form>
+{{/if}}
+
+
+{{!-- comments --}}
+
+<div class="comment-container">
+    <h3>Comments for this Post</h3>
+    {{#each event.comments as |comment|}}
+    {{> comment comment}}
+    {{/each}}
+</div>
+
+<script src="/js/comment.js"></script>

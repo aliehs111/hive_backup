@@ -2,7 +2,7 @@ const signupFormHandler = async (event) => {
     event.preventDefault();
   
     const user_name = document.querySelector("#signup_username").value.trim();
-    const password = document.querySelector("#signup_password").value.trim();
+      const password = document.querySelector("#signup_password").value.trim();
   
     if (user_name && password) {
       if (password.length < 8) {
@@ -10,9 +10,9 @@ const signupFormHandler = async (event) => {
       }
   
       try {
-        const response = await fetch("/api/users", {
+        const response = await fetch("/api/userRoutes", {
           method: "POST",
-          body: JSON.stringify({ user_name, password }),
+          body: JSON.stringify({ user_name, email, password }),
           headers: { "Content-Type": "application/json" },
         });
   
