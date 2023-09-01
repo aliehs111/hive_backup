@@ -27,11 +27,11 @@ router.get("/", withAuth, async function (req, res) {
         },
       ],
     });
-    const posts = eventsData.map((post) => post.get({ plain: true }));
+    const events = eventsData.map((post) => post.get({ plain: true }));
     res.render("dashboard", {
       loggedIn: req.session.logged_in,
       userName: req.session.user_name,
-      posts,
+      events,
     });
   } catch (error) {
     res.render("dashboard", {
